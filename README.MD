@@ -37,13 +37,18 @@ cd client
 npm install
 ```
 
-4. Запуск клиента:
+4. MongoDB и ключ
+
+Зарегестрируйтесь на сайте MongoDB и создайте там новый проект, его ключ скопируйте в файл /server/config/default.json
+Так же в пустое место введите свой ключ (любой)
+
+5. Запуск клиента:
 ```bash
 cd client
 npm run start
 ```
 
-5. Запуск сервера:
+6. Запуск сервера:
 ```bash
 cd server
 nodemon server.js
