@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: "Raleway", sans-serif;
+  background-color: rgb(150, 96, 250);
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  background-image: url("../assets/background.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 20%;
+  border-radius: 5px 5px 50px 50px;
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  top: 25px;
+  height: calc(100% - 50px);
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 520px) {
+  .navbar__header {
+    font-size: 25px;
+  }
+  .navbar__login {
+    font-size: 16px;
+  }
+  .navbar__registration {
+    font-size: 16px;
+  }
+  .navbar img {
+    margin: 0px 10px;
+  }
+  .container {
+    gap: 0px;
+  }
+  .navbar__search {
+    width: 80px;
+    font-size: 10px;
+  }
+  .file__size {
+    font-size: 10px;
+  }
+  .file__date {
+    font-size: 10px;
+  }
+  .file__btn {
+    font-size: 10px;
+  }
+  .file__img {
+    width: 35px;
+  }
+  .file__name {
+    font-size: 10px;
+  }
+  .filelist {
+    font-size: 12px;
+  }
+  .disk__create {
+    font-size: 12px;
+  }
+  .disk__upload-label {
+    font-size: 12px;
+  }
+  .disk__select {
+    font-size: 12px;
+  }
+  .disk__back {
+    font-size: 12px;
+  }
+  .disk__display {
+    padding: 5px 0px;
+  }
+  .disk__list {
+    margin: 0px 10px;
+  }
+  .disk__plate {
+    margin: 0px 5px;
+  }
+  .file-plate {
+    width: 100px;
+    height: 90px;
+  }
+  .file-plate__img {
+    height: 50px;
+    width: 50px;
+  }
+  .file-plate__btns {
+    margin-left: -5px;
+  }
+  
+  .file-plate__btn {
+    padding: 1px;
+    font-size: 11px;
+    border-radius: 5px;
+    margin-left: 3px;
+  }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}

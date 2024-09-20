@@ -1,0 +1,63 @@
+.filelist {
+  margin: 20px 0;
+  color: white;
+}
+
+.filelist__header {
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  background: #9896f1;
+  height: 40px;
+  align-items: center;
+}
+
+.filelist__name {
+  width: 70%;
+  height: 100%;
+  align-content: center;
+  text-align: center;
+  background: #cd98ff85;
+  grid-column-start: 2;
+}
+
+.filelist__date {
+  text-align: center;
+  padding: 5px;
+  height: 100%;
+  align-content: center;
+  background: #cd98ff85;
+  grid-column-start: 5;
+  justify-self: center;
+}
+
+.filelist__size {
+  text-align: center;
+  padding: 5px;
+  height: 100%;
+  align-content: center;
+  background: #cd98ff85;
+  grid-column-start: 6;
+  justify-self: center;
+}
+
+.fileplate {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.file-enter-active {
+  animation: file-enter 500ms forwards;
+}
+
+@keyframes file-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

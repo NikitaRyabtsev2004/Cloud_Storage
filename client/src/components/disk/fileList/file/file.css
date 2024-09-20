@@ -1,0 +1,132 @@
+.file {
+  margin: 10px 0;
+  border-bottom: solid 2px hsl(217, 21%, 43%);
+  border-top: solid 2px #566885;
+  display: grid;
+  grid-template-columns: 1fr 4fr repeat(4, 1fr);
+  align-items: center;
+  background: #9660fa;
+  font-weight: 600;
+  color: #ffffff;;
+  min-width: 60px;
+}
+
+.file__img {
+  justify-self: center;
+}
+
+.file__name {
+  font-size: 18px;
+  width: 70%;
+  word-break: break-all;
+  background: #cd98ff85;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+  align-content: center;
+  border-radius: 10px;
+  border: 2px solid #d8c0ff;
+}
+
+.file__date {
+  grid-column-start: 5;
+  justify-self: center;
+  background: #cd98ff85;
+  text-align: center;
+  height: 100%;
+  align-content: center;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid #d8c0ff;
+  margin-right: 10px;
+}
+
+.file__size {
+  grid-column-start: 6;
+  justify-self: center;
+  background: #cd98ff85;
+  text-align: center;
+  height: 80%;
+  align-content: center;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 2px solid #d8c0ff;
+}
+
+.file__btn {
+  display: none;
+  background: #cd98ff85;
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  transition: all 200ms ease-in-out;
+  font-weight: 600;
+  font-size: 15px;
+  border: 2px solid #d8c0ff;
+  color: #ffffff;;
+}
+
+.file__delete {
+  margin-right: 10px;
+}
+
+.file__btn:hover {
+  animation: pulse 500ms forwards;
+}
+
+.file:hover .file__date {
+  grid-column-start: 5;
+  display: block;
+}
+
+.file:hover .file__size {
+  grid-column-start: 6;
+  display: block;
+}
+
+.file:hover .file__download {
+  grid-column-start: 3;
+  display: block;
+}
+
+.file:hover .file__delete {
+  grid-column-start: 4;
+  display: block;
+}
+
+.file-plate {
+  background: #b68fff88;
+  border-radius: 10px;
+  margin: 5px;
+  width: 150px;
+  word-break: break-word;
+  height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-plate__img {
+  height: 100px;
+  width: 100px;
+}
+
+.file-plate__btns {
+  display: none;
+  margin-left: -5px;
+}
+
+.file-plate__btn {
+  background: #cd98ff85;
+  border: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 2px;
+  border: 2px solid #d8c0ff;
+}
+
+.file-plate:hover .file-plate__btns {
+  display: flex;
+}

@@ -1,0 +1,7 @@
+{
+  "serverPort" : 5000,
+  "dbUrl": "",
+  "secretKey": "",
+  "filePath": "\\\\192.168.31.247\\Users\\Public\\server-data\\",
+  "staticPath": "\\\\192.168.31.247\\Users\\Public\\server-data\\static\\"
+}

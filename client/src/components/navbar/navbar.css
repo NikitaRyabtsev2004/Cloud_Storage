@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  background-color: #9896f1;
+  width: 100%;
+}
+
+.navbar__logo {
+  margin: 0px 50px;
+  width: 50px;
+  filter: hue-rotate(420deg) brightness(1.2);
+  border-radius: 20px;
+  border: 5px solid #41c8f4;
+}
+
+.navbar__header {
+  margin-left: 5px;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 4px 5px;
+  background: #51459266;
+  border-radius: 0 20px 20px 0;
+  height: 100%;
+  align-content: center;
+  color: #9896f1;
+}
+
+.navbar__login {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+  background: #51459266;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 5px;
+  height: 100%;
+  align-content: center;
+}
+
+.navbar__logout {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 900;
+  background: #51459266;
+  padding: 10px 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 5px;
+  height: 100%;
+  align-content: center;
+}
+
+.navbar__login:hover {
+  animation: pulse 500ms forwards;
+}
+
+.navbar__registration {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 900;
+  background: #51459266;
+  padding: 10px 5px;
+  border-radius: 10px 0 0 10px;
+  margin-right: 10px;
+  height: 100%;
+  align-content: center;
+}
+
+.navbar__registration:hover {
+  animation: pulse 500ms forwards;
+}
+
+.navbar__search {
+  width: 120px;
+  margin: 5px;
+  height: 100%;
+  background: #d8c0ff;
+}
+
+.navbar__search::placeholder {
+  color: white;
+}
+
+.navbar__avatar {
+  height: 50px;
+  margin-top: 3px;
+  border-radius: 20%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
